@@ -1,0 +1,10 @@
+node_modules/
+contracts/integrations/aave
+contracts/integrations/gmx
+contracts/integrations/layerzero/interfaces
+contracts/integrations/layerzero/lzApp
+contracts/integrations/layerzero/util
+contracts/integrations/lib
+contracts/integrations/perpetual
+contracts/integrations/uniswap
+contracts/mocks

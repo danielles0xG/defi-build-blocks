@@ -1,0 +1,351 @@
+{
+	"DE_COMMAS_REGISTER" : "0x468dcaf75744703d6191D0299e712FD121b77856",
+	"REGISTRY": {
+		"MAINNET": {
+			"NETWORKS": ["avalanche","optimism","bsc_mainnet","polygon","fantom","arbitrum"],
+			"CHAIN_IDS": "0x650066006a006d006e006f0070",
+			"CHAIN_AMOUNT": 7,
+			"ID": "111"
+		},
+		"TESTNET": {
+			"NETWORKS": ["fujiavax","polygonmumbai","optimismgoerli","bsctestnet"],
+			"CHAIN_IDS": "0x2776277A277D2794",
+			"CHAIN_AMOUNT": 4,
+			"ID": "10132",
+			"ADDRESS": "0x87505565e4341261B21ebD2BA3AE55de47E3d781"
+		}
+	},
+	"ACTION_POOL": {
+		"MAINNET": {
+			"NETWORKS": ["avalanche","optimism","bsc_mainnet","polygon","fantom","arbitrum"],
+			"ADDRESS": "0xaB93e0A570203F6F1fe1a40D1F79aaBecaE28842",
+			"ID": "111"
+		},
+		"TESTNET":{
+			"NETWORKS": ["fujiavax","polygonmumbai","optimismgoerli","bsctestnet"],
+			"ADDRESS": "0x24F0c71855d0AA30746A0d2Bc0A2F0D20C2E0F2B",
+			"ID": "10102"
+		}
+	},
+	"BB_FABRICS": {
+		"avalanche": "0x764aA2C2dDeA691Dd17671a67EC791cA4B00610a",
+		"optimism": "",
+		"polygon": "",
+		"polygonmumbai": "",
+		"bsctestnet": "",
+		"fujiavax": "0x75531164f55cD2b68c5053dAC3D07BA443968d6D"
+	},
+	"ROUTERS": {
+		"avalanche": "0x4864CD7fe009C21F76bCAE212f1c4b18335DF68b",
+		"optimism": "",
+		"polygon": "",
+		"polygonmumbai": "",
+		"bsctestnet": "0xd09E7E732d507600110553a99C64aEdf0666bE01",
+		"fujiavax": "0xD8FE738c044C2f742C909600E3Bc041a5d5c7522",
+		"bsc_mainnet": "0x94F73a24C5359D9c04a7C736798a7A0edAb56a6a"
+	},
+	"BB_MOCKS": {
+		"avalanche": "",
+		"optimism": "",
+		"polygon": "",
+		"polygonmumbai": "",
+		"bsctestnet": "",
+		"fujiavax": "0x025Eea28E3D1DD671F2d3a93ea87a95E4541c0E4"
+	},
+	"LZ_ENDPOINTS": {
+		"ethereum": {
+			"ADDRESS": "0x66A71Dcef29A0fFBDBE3c6a460a3B5BC225Cd675",
+			"ID": "101"
+		},
+		"arbitrum": {
+			"ADDRESS": "0x3c2269811836af69497E5F486A85D7316753cf62",
+			"ID": "110"
+		},
+		"fantom": {
+			"ADDRESS": "0xb6319cC6c8c27A8F5dAF0dD3DF91EA35C4720dd7",
+			"ID": "112"
+		},
+		"bsc_mainnet": {
+			"ADDRESS": "0x3c2269811836af69497E5F486A85D7316753cf62",
+			"ID": "102"
+		},
+		"avalanche": {
+			"ADDRESS": "0x3c2269811836af69497E5F486A85D7316753cf62",
+			"ID": "106"
+		},
+		"optimism": {
+			"ADDRESS": "0x3c2269811836af69497E5F486A85D7316753cf62",
+			"ID": "111"
+		},
+		"polygon": {
+			"ADDRESS": "0x3c2269811836af69497E5F486A85D7316753cf62",
+			"ID": "109"
+		},
+		"polygonmumbai": {
+			"ADDRESS": "0xf69186dfBa60DdB133E91E9A4B5673624293d8F8",
+			"ID": "10109"
+		},
+		"bsctestnet": {
+			"ADDRESS": "0x6Fcb97553D41516Cb228ac03FdC8B9a0a9df04A1",
+			"ID": "10102"
+		},
+		"fujiavax": {
+			"ADDRESS": "0x93f54D755A063cE7bB9e6Ac47Eccc8e33411d706",
+			"ID": "10106"
+		},
+		"optimismgoerli": {
+			"ADDRESS": "0xae92d5aD7583AD66E49A0c67BAd18F6ba52dDDc1",
+			"ID": "10132"
+		}
+	},
+	"AAVE_BB": {
+		"DC_BUILDING_BLOCK": {
+			"avalanche": "0x18b3ad51785d6F588FAe38eE4513F60dc94436E9",
+			"fujiavax": "0x94F73a24C5359D9c04a7C736798a7A0edAb56a6a"
+		},
+		"IMPLEMENTATION": {
+			"avalanche": "0xd0c61D696C2aBF563b7C817C19244bD5bd4c6e8E"
+		},
+		"AAVE": {
+			"avalanche": {
+				"POOL_ADDRESS_PROVIDER": "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb",
+				"WETH_GATEWAY": "0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7",
+				"REWARD_CONTROLLER": "0x929EC64c34a17401F460460D4B9390518E5B473e"
+			},
+			"polygon": {
+				"POOL_ADDRESS_PROVIDER": "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb",
+				"WETH_GATEWAY": "0x1e4b7A6b903680eab0c5dAbcb8fD429cD2a9598c",
+				"REWARD_CONTROLLER": "0x929EC64c34a17401F460460D4B9390518E5B473e"
+			},
+			"optimism": {
+				"POOL_ADDRESS_PROVIDER": "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb",
+				"WETH_GATEWAY": "0x76D3030728e52DEB8848d5613aBaDE88441cbc59",
+				"REWARD_CONTROLLER": "0x929EC64c34a17401F460460D4B9390518E5B473e"
+			},
+			"fujiavax": {
+				"POOL_ADDRESS_PROVIDER": "0x1775ECC8362dB6CaB0c7A9C0957cF656A5276c29",
+				"WETH_GATEWAY": "0x8f57153F18b7273f9A814b93b31Cb3f9b035e7C2",
+				"REWARD_CONTROLLER": "0x58Cd851c28dF05Edc7F018B533C0257DE57673f7",
+				"USDC": "0x3E937B4881CBd500d05EeDAB7BA203f2b7B3f74f"
+			},
+			"polygonmumbai": {
+				"POOL_ADDRESS_PROVIDER": "0x5343b5bA672Ae99d627A1C87866b8E53F47Db2E6",
+				"WETH_GATEWAY": "0x2a58E9bbb5434FdA7FF78051a4B82cb0EF669C17",
+				"REWARD_CONTROLLER": "0xFfaDa869df79320120dfFd6eeE8cF664Dba43146",
+				"USDC": "0x9aa7fEc87CA69695Dd1f879567CcF49F3ba417E2"
+			},
+			"optimismgoerli": {
+				"POOL_ADDRESS_PROVIDER": "0x74a328ED938160D702378Daeb7aB2504714B4E4b",
+				"WETH_GATEWAY": "0x6f7f2440006221F893c587b88f01afc42B6F8d2e",
+				"REWARD_CONTROLLER": "0x0C501fB73808e1BD73cBDdd0c99237bbc481Bb58",
+				"USDC": "0xf1485Aa729DF94083ab61B2C65EeA99894Aabdb3"
+			}
+		},
+		"AAVE_LENS":{
+			"avalanche":"0x3A8bB4F264e682E2D8f884BA58e37b977288252C",
+			"fujiavax":"0x5378BfaE3875Abe78e4C2E161d2e57a403fC3737"
+		}
+	},
+	"GMX_BB": {
+		"DC_BUILDING_BLOCK": {
+			"avalanche": "0xD7aD015D750BBBF1Cb261baaCCdb55f5688B3905",
+			"arbitrum":"0x6B17Ea1271D4d326C8390942f1EFb22c7968e0a8"
+		},
+		"IMPLEMENTATION": {
+			"avalanche": "0x53c9782da33e8A486F13C9483D12a506E3FD57D8",
+			"arbitrum": "0xdE93537393aCC0f944f6eA4b64cA30D7eF73cC9c"
+		},
+		"GMX": {
+			"VAULT": {
+				"avalanche": "0x9ab2De34A33fB459b538c43f251eB825645e8595",
+				"arbitrum": "0x489ee077994B6658eAfA855C308275EAd8097C4A"
+			},
+			"REWARD_ROUTER": {
+				"avalanche": "0x82147C5A7E850eA4E28155DF107F2590fD4ba327",
+				"arbitrum": "0xA906F338CB21815cBc4Bc87ace9e68c87eF8d8F1"
+			}
+		}
+	},
+	"UNISWAP_V2_BB":{
+		"DC_BUILDING_BLOCK": {
+			"optimism": " "
+		},
+		"UNISWAP_V2": {
+			"ROUTER": {
+				"avalanche": "0x60aE616a2155Ee3d9A68541Ba4544862310933d4"
+			}
+		}
+	},
+	"UNISWAP_V3_BB":{
+		"DC_BUILDING_BLOCK": {
+			"optimism": " "
+		},
+		"UNISWAP_V3": {
+			"ROUTER": {
+				"optimism": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"
+			},
+			"FACTORY": {
+				"optimism": "0x1F98431c8aD98523631AE4a59f267346ea31F984"
+			},
+			"QUOTER": {
+				"optimism": "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"
+			}
+		}
+	},
+	"UNISWAP_V2_BB":{
+		"DC_BUILDING_BLOCK": {
+			"optimism": " "
+		},
+		"UNISWAP_V2": {
+			"ROUTER": {
+				"avalanche": "0x60aE616a2155Ee3d9A68541Ba4544862310933d4"
+			}
+		}
+	},
+	"PERP_BB":{
+		"DC_BUILDING_BLOCK": {
+			"optimism": " "
+		},
+		"PERP_PROTOCOL": {
+			"CLEARING_HOUSE": {
+				"optimism": "0x82ac2CE43e33683c58BE4cDc40975E73aA50f459"
+			},
+			"VAULT": {
+				"optimism": "0xAD7b4C162707E0B2b5f6fdDbD3f8538A5fbA0d60"
+			},
+			"BASE_TOKEN":{
+				"optimism":"0x8C835DFaA34e2AE61775e80EE29E2c724c6AE2BB"
+			}
+		}
+	},
+	"BRIDGES":{
+		"fujiavax": {
+		   "chainId": "10106",
+		   "Router": " ",
+		   "USDC": "0x4A0D1092E9df255cf95D72834Ea9255132782318",
+		   "USDC_PoolId": "1",
+		   "Swapper": " ",
+		   "Bridge": "0x13093E05Eb890dfA6DacecBdE51d24DabAb2Faa1"
+		},
+		"bsctestnet": {
+		   "chainId": "10102",
+		   "Router": "0xbB0f1be1E9CE9cB27EA5b0c3a85B7cc3381d8176",
+		   "USDC": "0xF49E250aEB5abDf660d643583AdFd0be41464EfD",
+		   "DEX": "0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3",
+		   "UniFactory": "0xb7926c0430afb07aa7defde6da862ae0bde767bc",
+		   "USDC_PoolId": "2",
+		   "Swapper": "0xBA4F183Db3868486053Da8d3933b16a58f2faDC0",
+		   "Bridge": "0x6cfe0aBdC0102454CFc5D550CfCdcB200C45f098",
+		   "dcSwap": "0xD4b6EbE766D7Aa1153412BEF40Cf9e95CfabcAAb"
+		},
+		"optimismgoerli": {
+			"chainId": "10132",
+			"Router": "0x95461eF0e0ecabC049a5c4a6B98Ca7B335FAF068",
+			"USDC": "0x0CEDBAF2D0bFF895C861c5422544090EEdC653Bf",
+			"USDC_PoolId": "1",
+			"Swapper": "0xfBe757232eAB22768399Ab33c2f0C311EA83A37D",
+			"Bridge": "0x9dCA791b972d7A67EF7512878282D8EfB637f4D0"
+		},
+		"polygonmumbai": {
+		   "chainId": "10109",
+		   "Router": "0x817436a076060D158204d955E5403b6Ed0A5fac0",
+		   "USDC": "0x742DfA5Aa70a8212857966D491D67B09Ce7D6ec7",
+		   "DEX": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+		   "USDC_PoolId": "1",
+		   "Swapper": "0xA392112a9Aad81b5DCBe899c719c0Ad38136Ed5f",
+		   "Bridge": "0xDf895a9c15596d84b43a8aCAe94190AC53D5becF"
+		},
+		"optimism": {
+		   "chainId": "111",
+		   "Router": "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b",
+		   "USDC": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+		   "DEX": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+		   "Quoter": "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
+		   "UniFactory": "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+		   "USDC_PoolId": "1",
+		   "Bridge": "0xC074E5b1Eb4DB02e7a7B1c01A699cAfAb0b9e724",
+		   "Swapper": "0x5f11813A84E0C3131Ef6E210B1b032354cD5815a"
+		},
+		"polygon": {
+		   "chainId": "109",
+		   "Router": "0x45A01E4e04F14f7A4a6702c74187c5F6222033cd",
+		   "USDC": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+		   "USDT": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+		   "DEX": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+		   "UniFactory": "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+		   "USDC_PoolId": "1",
+		   "USDT_PoolId": "2",
+		   "Bridge": "0x9264719A530c4611c63b0B1924b6b97b398D228F",
+		   "Swapper": "0x3c1e3EFFDc5858fEeE80AcB78C559D9F054044bc"
+		},
+		"bsc_mainnet": {
+		   "chainId": "102",
+		   "Router": "0x4a364f8c717cAAD9A442737Eb7b8A55cc6cf18D8",
+		   "USDC": "0x55d398326f99059fF775485246999027B3197955",
+		   "DEX": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+		   "UniswapFactory": "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+		   "USDC_PoolId": "2",
+		   "Swapper": "0x1d8F22ac523f97d36A9709eBF7D5A5E40295835B",
+		   "WETH": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+		   "Bridge": "0x7F062598f2c856Ff43Cd4c42718CFb31aAE0e8b6"
+		},
+		"ethereum": {
+		   "chainId": "101",
+		   "Router": "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
+		   "USDC": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+		   "USDT": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+		   "USDC_PoolId": "1",
+		   "USDT_PoolId": "1",
+		   "Swapper": "0x7e1747636043aD2Ba8CAaAD3D248E00B3CD55880",
+		   "Bridge": "0x9dCA791b972d7A67EF7512878282D8EfB637f4D0"
+		},
+		"arbitrum": {
+		   "chainId": "110",
+		   "Router": "0x53Bf833A5d6c4ddA888F69c22C88C9f356a41614",
+		   "USDC": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+		   "USDC_PoolId": "1",
+		   "Swapper": "0x1fB37159f9a081E626C561bD1A23eE155179C66A",
+		   "Bridge": "0x9264719A530c4611c63b0B1924b6b97b398D228F"
+		},
+		"fantom": {
+		   "chainId": "112",
+		   "Router": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
+		   "USDC": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+		   "USDC_PoolId": "1",
+		   "Swapper": "0x8ECeF9edf30159d06751dc9b5Aece47fD9f38e0d",
+		   "Bridge": "0x9264719A530c4611c63b0B1924b6b97b398D228F",
+		   "DEX": "0xF491e7B69E4244ad4002BC14e878a34207E38c29"
+		},
+		"avalanche": {
+		   "chainId": "106",
+		   "Router": "0x45A01E4e04F14f7A4a6702c74187c5F6222033cd",
+		   "USDC": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+		   "DEX": "0x60aE616a2155Ee3d9A68541Ba4544862310933d4",
+		   "USDC_PoolId": "1",
+		   "Swapper": "0x2b0381d7D86297ef65484c2f1f7c51190a351E26",
+		   "Bridge": "0xDad97cC49ebb2fCe32b2Aba198a78B547e8961De"
+		}
+	 },
+	"ASSETS": {
+		"USDC": {
+			"avalanche": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+            "polygonmumbai": "",
+            "optimism":"0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+            "polygon":"",
+            "bsctestnet":"0xF49E250aEB5abDf660d643583AdFd0be41464EfD",
+            "fujiavax":"",
+			"bsc_mainnet": "0x55d398326f99059fF775485246999027B3197955",
+			"arbitrum": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+		},
+		"DAI":{
+			"optimism":"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
+		},
+		"FRAX" : {
+			"avalanche": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64",
+			"bsc_mainnet": "0x55d398326f99059ff775485246999027b3197955"
+		},
+		"WETH":{
+			"optimism":"0x4200000000000000000000000000000000000006"
+		}
+	}
+}

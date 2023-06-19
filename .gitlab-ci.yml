@@ -1,0 +1,63 @@
+default:
+  tags: ["docker"]
+  image: node:16
+
+stages:
+  - build
+
+# -----
+# Global variables (can be changed on manual pipelines)
+# -----
+
+variables:
+  FF_USE_FASTZIP: "true"
+  ARTIFACT_COMPRESSION_LEVEL: "fast"
+  CACHE_COMPRESSION_LEVEL: "fast"
+  FF_SCRIPT_SECTIONS: "true"
+
+# -----
+# Test build on MR
+# -----
+
+test_build:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  stage: build
+  script:
+    - mv $ENV .env
+    - npm install
+    - npx hardhat compile
+    - npx hardhat test
+  cache:
+    - key:
+        files:
+          - package-lock.json
+      paths:
+        - node_modules/
+      policy: pull-push
+
+# -----
+# Build main and develop
+# -----
+
+build:
+  rules:
+    - if: ($CI_COMMIT_REF_NAME == "main" || $CI_COMMIT_REF_NAME == "develop") && $CI_PIPELINE_SOURCE != "merge_request_event"
+  stage: build
+  script:
+    - mv $ENV .env
+    - npm install
+    - npx hardhat compile
+    - npx hardhat test
+  artifacts:
+    expire_in: 30 days
+    name: contracts-artifacts
+    paths:
+      - artifacts/contracts
+  cache:
+    - key:
+        files:
+          - package-lock.json
+      paths:
+        - node_modules/
+      policy: pull-push

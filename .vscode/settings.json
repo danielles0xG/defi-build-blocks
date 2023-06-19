@@ -1,0 +1,13 @@
+{
+    "slither.solcPath": " /Users/danielguerrero/.solc-select/global-version",
+    "slither.hiddenDetectors": [],
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*",
+                "isAsync": true,
+                "cmd": "npx hardhat compile"
+            }
+        ]
+    }
+}

@@ -1,0 +1,139 @@
+{
+  "kind": "user",
+  "methods":
+{
+  "adjustPosition(uint256,uint16,address,string,bytes)":
+{
+  "notice": "Performing the function of a building block in the target chain and passing a message to it"
+},
+  "bridge(uint256,uint256,address,address,uint16,address)":
+{
+  "notice": "Transfer stable tokens to target chain over stargateBridge"
+},
+  "currentUSDCToken()":
+{
+  "notice": "stableCoin address of the current network  https://coinmarketcap.com/ru/currencies/usd-coin/"
+},
+  "deposit(uint256,uint256)":
+{
+  "notice": "User can to deposit his stable Token, after Approve"
+},
+  "forceResumeReceive(uint16,bytes)":
+{
+"notice": "LZ Config"
+},
+"getConfig(uint16,uint16,address,uint256)":
+{
+"notice": "LZ Config"
+},
+"getDeCommasRegister()":
+{
+"notice": "Get deCommasRouter registrar address"
+},
+"getNativeChainId()":
+{
+"notice": "Get nativeChain id in LZ"
+},
+"getNativeLZEndpoint()":
+{
+"notice": "Get native trusted LZ Endpoint"
+},
+"getNativeSGBridge()":
+{
+"notice": "Get native StargateBridge contract address  for DeCommas"
+},
+"getPendingTokensToWithdraw(address,uint256)":
+{
+"notice": "Get how many user tokens are waiting to withdrawal"
+},
+"getReceiveVersion()":
+{
+"notice": "LZ Config"
+},
+"getSendVersion()":
+{
+"notice": "LZ Config"
+},
+"getUserShares(address,uint256)":
+{
+"notice": "Get the size of the user's share in the strategy"
+},
+"initialize(uint16,address,address,address,address)":
+{
+"notice": "Initializer for Proxy"
+},
+"isDeCommasActionStrategy(uint256)":
+{
+"notice": "Get if this strategy works or not"
+},
+"lzReceive(uint16,bytes,uint64,bytes)":
+{
+"notice": "LayerZeroEndpoint interface technical function, see more:       (https://layerzero.gitbook.io/docs/guides/master/receive-messages)"
+},
+"pullOutLossERC20(address)":
+{
+"notice": "Rescuing Lost Tokens"
+},
+"remotes(uint16)":
+{
+"notice": "Mapping from chain ID to endpoint address"
+},
+"setActionPool(address)":
+{
+"notice": "Set address of action Pool"
+},
+"setBridge(address)":
+{
+"notice": "Set address of bridge"
+},
+"setConfig(uint16,uint16,uint256,bytes)":
+{
+"notice": "LZ Config"
+},
+"setInboundConfirmations(uint16,uint16)":
+{
+"notice": "LZ Config - set the inbound block confirmations"
+},
+"setOutboundConfirmations(uint16,uint16)":
+{
+"notice": "LZ Config set outbound block confirmations"
+},
+"setReceiveVersion(uint16)":
+{
+"notice": "LZ Config"
+},
+"setRemote(uint16,bytes)":
+{
+"notice": "@param chainId - target chain id in LayerZero, see more:        (https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)"
+},
+"setSendVersion(uint16)":
+{
+"notice": "LZ Config"
+},
+"setUSDC(address)":
+{
+"notice": "Set address of native stable token for this router"
+},
+"startStrategyList(uint256)":
+{
+"notice": "Added new strategy"
+},
+"stopStrategyList(uint256)":
+{
+"notice": "Stop strategy"
+},
+"totalSupply(uint256)":
+{
+"notice": "Get ERC-1155 totalSupply for id"
+},
+"withdraw(uint256,uint256)":
+{
+"notice": "User submits a request to withdraw his tokens"
+},
+"withdrawOrdersToUsers(address[],uint256,uint256)":
+{
+"notice": "ActionPool address outputs the user's funds"
+}
+},
+"version": 1
+}

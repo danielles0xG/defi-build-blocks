@@ -1,0 +1,295 @@
+{
+"author": "DeCommas team",
+"details": "Originally based on code by Pillardev: https://github.com/PillardevelopmentOriginal idea on architecture by Loggy: https://miro.com/app/board/uXjVOZbZQQI=/?fromRedirect=1",
+"kind": "dev",
+"methods":
+{
+"adjustPosition(uint256,uint16,address,string,bytes)":
+{
+"details": "only ActionPool address",
+"params":
+{
+"actionData": "- destination vault func parameters encoded in bytes.",
+"func": "- destination vault function signature - use this ex. - \"borrow(bytes)\"",
+"strategyId": "- strategy number by which it will be identified",
+"vaultAddress": "- recipient address of stable tokens in the target chain",
+"vaultLZId": "- target chain id in LayerZero, see more:       (https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)"
+}
+},
+"balanceOf(address,uint256)":
+{
+"details": "See {IERC1155-balanceOf}. Requirements: - `account` cannot be the zero address."
+},
+"balanceOfBatch(address[],uint256[])":
+{
+"details": "See {IERC1155-balanceOfBatch}. Requirements: - `accounts` and `ids` must have the same length."
+},
+"bridge(uint256,uint256,address,address,uint16,address)":
+{
+"details": "if this Polygon Chain, for other chain is lzReceiveonly ActionPool address",
+"params":
+{
+"destinationStableToken": "- stable token on the target chain",
+"nativeStableToken": "- stable token on the native chain, optional currentUSDCToken",
+"stableAmount": "- how many tokens are you sending (6 or 18 decimals)",
+"strategyId": "- strategy number by which it will be identified",
+"vaultAddress": "- recipient address of stable tokens in the target chain",
+"vaultLZId": "- target chain id in LayerZero, see more:       (https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)"
+}
+},
+"deposit(uint256,uint256)":
+{
+"details": "If user want ERC20, He can to mint in special contract -",
+"params":
+{
+"stableAmount": "- 6 decimals",
+"strategyId": "- strategy number by which it will be identified"
+}
+},
+"forceResumeReceive(uint16,bytes)":
+{
+"details": "special lz functionality"
+},
+"getConfig(uint16,uint16,address,uint256)":
+{
+"details": "special lz functionality"
+},
+"getDeCommasRegister()":
+{
+"returns":
+{
+"_0": "address - address of deCommas Register"
+}
+},
+"getNativeChainId()":
+{
+"returns":
+{
+"_0": "uint16  - native chain id in LayerZero, see more:       (https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)"
+}
+},
+"getNativeLZEndpoint()":
+{
+"returns":
+{
+"_0": "address  - native chain Endpoint address in LayerZero, see more:       (https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)"
+}
+},
+"getNativeSGBridge()":
+{
+"returns":
+{
+"_0": "address - native stargateBridge address of deCommas"
+}
+},
+"getPendingTokensToWithdraw(address,uint256)":
+{
+"params":
+{
+"strategyId": "- strategy number by which it will be identified",
+"user": "- address of user"
+},
+"returns":
+{
+"_0": "uint256 - get the number of tokens that the user has requested for withdrawal"
+}
+},
+"getReceiveVersion()":
+{
+"details": "special lz functionality"
+},
+"getSendVersion()":
+{
+"details": "special lz functionality"
+},
+"getUserShares(address,uint256)":
+{
+"params":
+{
+"strategyId": "- strategy number by which it will be identified",
+"user": "- address of user"
+},
+"returns":
+{
+"_0": "uint256 what share of the user in the id"
+}
+},
+"initialize(uint16,address,address,address,address)":
+{
+"details": "See {_setURI}.",
+"params":
+{
+"actionPool": "- address of vault's actions",
+"currentUSDC_": "- narive stableToken(USDT,USDC,DAI...)",
+"deCommasRegister_": "- address of strategy registrat",
+"nativeChain_": "- native chain id in LayerZero, see more:       (https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)",
+"nativeLZEndpoint_": "- - native LZEndpoint, see more:       (https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)"
+}
+},
+"isApprovedForAll(address,address)":
+{
+"details": "See {IERC1155-isApprovedForAll}."
+},
+"isDeCommasActionStrategy(uint256)":
+{
+"params":
+{
+"strategyId": "- strategy number by which it will be identified"
+},
+"returns":
+{
+"_0": "bool true if work, false if not"
+}
+},
+"lzReceive(uint16,bytes,uint64,bytes)":
+{
+"details": "- use only LayerZeroEndpoint",
+"params":
+{
+"payload": "- destination vault address + func Signature encoded in bytes.",
+"srcAddress": "- source address of sender",
+"srcChainId": "-  source sender ID in LayerZero, see more:       (https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)"
+}
+},
+"owner()":
+{
+"details": "Returns the address of the current owner."
+},
+"pullOutLossERC20(address)":
+{
+"details": "use only deCommasRegister",
+"params":
+{
+"token": "- address of the erroneously submitted token to extrication"
+}
+},
+"renounceOwnership()":
+{
+"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+},
+"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)":
+{
+"details": "See {IERC1155-safeBatchTransferFrom}."
+},
+"safeTransferFrom(address,address,uint256,uint256,bytes)":
+{
+"details": "See {IERC1155-safeTransferFrom}."
+},
+"setActionPool(address)":
+{
+"details": "only deCommas Register Address",
+"params":
+{
+"newActionPool": "- address of Action Pool contract"
+}
+},
+"setApprovalForAll(address,bool)":
+{
+"details": "See {IERC1155-setApprovalForAll}."
+},
+"setBridge(address)":
+{
+"details": "only deCommas Register Address",
+"params":
+{
+"newSgBridge": "- address of deBridge"
+}
+},
+"setConfig(uint16,uint16,uint256,bytes)":
+{
+"details": "special lz functionality"
+},
+"setInboundConfirmations(uint16,uint16)":
+{
+"details": "special lz functionality"
+},
+"setOutboundConfirmations(uint16,uint16)":
+{
+"details": "special lz functionality"
+},
+"setReceiveVersion(uint16)":
+{
+"details": "special lz functionality"
+},
+"setRemote(uint16,bytes)":
+{
+"details": "only deCommas Register Address",
+"params":
+{
+"remoteAddress": "- RouterAddress in target Chain"
+}
+},
+"setSendVersion(uint16)":
+{
+"details": "special lz functionality"
+},
+"setUSDC(address)":
+{
+"details": "only deCommas Register Address",
+"params":
+{
+"newStableToken": "address of native stableToken"
+}
+},
+"startStrategyList(uint256)":
+{
+"details": "only deCommas Register Address",
+"params":
+{
+"strategyId": "- strategy number by which it will be identified"
+}
+},
+"stopStrategyList(uint256)":
+{
+"details": "only deCommas Register Address",
+"params":
+{
+"strategyId": "- strategy number by which it will be identified"
+}
+},
+"supportsInterface(bytes4)":
+{
+"details": "See {IERC165-supportsInterface}."
+},
+"totalSupply(uint256)":
+{
+"params":
+{
+"strategyId": "- strategy number by which it will be identified"
+},
+"returns":
+{
+"_0": "uint256- totalSupply of this ID"
+}
+},
+"transferOwnership(address)":
+{
+"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+},
+"uri(uint256)":
+{
+"details": "See {IERC1155MetadataURI-uri}. This implementation returns the same URI for *all* token types. It relies on the token type ID substitution mechanism https://eips.ethereum.org/EIPS/eip-1155#metadata[defined in the EIP]. Clients calling this function must replace the `\\{id\\}` substring with the actual token type ID."
+},
+"withdraw(uint256,uint256)":
+{
+"details": "18 decimals",
+"params":
+{
+"deTokenAmount": "- how number of ERC-1155 deTokens user would withdraw",
+"strategyId": "- strategy number by which it will be identified"
+}
+},
+"withdrawOrdersToUsers(address[],uint256,uint256)":
+{
+"details": "only ActionPool address",
+"params":
+{
+"strategyId": "- strategy number by which it will be identified",
+"tvl": "- the total amount of locked funds of all users in the building block",
+"users": "- list of user's addresses"
+}
+}
+},
+"title": "Implementation of the basic multiChain DeCommasStrategyRouter.",
+"version": 1
+}
